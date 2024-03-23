@@ -106,3 +106,10 @@ body{
     font-size: 14px;
     display: none;
 }
+
+
+@media screen and (max-width: 768px) {
+    .col{
+        flex-wrap: wrap;
+    }
+}

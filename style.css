@@ -1,33 +1,38 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     box-sizing: border-box;
 }
 
-body{
-    background: #222;
+body {
+    background: url(/assets/bg.jpg) no-repeat;
+    background-size: cover;
 }
 
-.card{
+.card {
     width: 90%;
     max-width: 470px;
-    background: linear-gradient(135deg, #08e8ec, #d464e2);
+    /* background: linear-gradient(135deg, #08e8ec, #d464e2); */
+    background: transparent;
     color: #fff;
     margin: 100px auto 0;
+    border: 2px soldi rgba(255, 255, 255, .5);
     border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
     padding: 40px 35px;
     text-align: center;
 }
 
-.search{
+.search {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.search input{
+.search input {
     border: 0;
     outline: 0;
     background: #ebfffc;
@@ -40,7 +45,7 @@ body{
     font-size: 18px;
 }
 
-.search button{
+.search button {
     border: 0;
     outline: 0;
     background: #ebfffc;
@@ -50,27 +55,27 @@ body{
     cursor: pointer;
 }
 
-.search button img{
+.search button img {
     width: 16px;
 }
 
-.weather-icon{
+.weather-icon {
     width: 170px;
     margin-top: 30px;
 }
 
-.weather h1{
+.weather h1 {
     font-size: 80px;
     font-weight: 500;
 }
 
-.weather h2{
+.weather h2 {
     font-size: 45px;
     font-weight: 400;
     margin-top: -10px;
 }
 
-.details{
+.details {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -78,28 +83,29 @@ body{
     margin-top: 50px;
 }
 
-.col{
+.col {
     display: flex;
     align-items: center;
     text-align: left;
 
 }
 
-.col img{
+.col img {
     width: 40px;
     margin-right: 10px;
 }
 
-.humidity, .wind{
+.humidity,
+.wind {
     font-size: 28px;
     margin-top: -6px;
 }
 
-.weather{
+.weather {
     display: none;
 }
 
-.error{
+.error {
     text-align: left;
     margin-left: 10px;
     margin-top: 10px;
@@ -109,7 +115,7 @@ body{
 
 
 @media screen and (max-width: 768px) {
-    .col{
+    .col {
         flex-wrap: wrap;
     }
 }
